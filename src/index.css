@@ -1,0 +1,32 @@
+/* Dark and light theme styles */
+body.light-theme {
+  background-color: #f8f9fa; /* Bootstrap light background */
+  color: #212529;
+}
+
+body.dark-theme {
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+/* Optional: Card shadow and rounded */
+.card {
+  border-radius: 1rem;
+}
+
+/* Error message styling */
+.alert-custom {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Optional logo animation */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
