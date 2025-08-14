@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = 'https://localhost:44378/api/Tasks';
+const API_BASE = 'https://smarttaskmanagerbackend.fly.dev/api/Tasks';
 
 export const fetchTasks = async () => {
   return axios.get(API_BASE, { headers: { Accept: 'text/plain' } });
@@ -17,3 +17,4 @@ export const updateTask = async (id, task) => {
 export const deleteTask = async (id) => {
   return axios.delete(`${API_BASE}/${id}`);
 };
+
